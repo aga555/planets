@@ -1,4 +1,11 @@
-<p>planets works!</p>
+<!--<p>planets works!</p>
 <p>
   {{planets$|async |json}}
-</p>
+</p>-->
+<div>
+  <h1> Planets </h1>
+
+  <div *ngFor=" let planet of planets$ | async ">
+    {{planet.name}}
+  </div>
+</div>
