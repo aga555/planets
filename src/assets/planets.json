@@ -12,7 +12,7 @@
   },
   {
     "name": "Kepler-7 b",
-    "typ": "Gas Giant",
+    "typ": "GasGiant",
     "title": " A giant planet composed mainly of gas",
     "img": "https://exoplanets.nasa.gov/system/planets/planet_images/1801_kepler7bsnw169.jpg",
     "imgType": " Artist concept",
@@ -23,7 +23,7 @@
   },
   {
     "name": "Kepler-22 b",
-    "typ": "Super Earth",
+    "typ": "SuperEarth",
     "title": " A potentially rocky world, larger than Earth",
     "img": "https://exoplanets.nasa.gov/assets/content/planets/terrestrial.jpg",
     "imgType": " Artist concept",
@@ -34,7 +34,7 @@
   },
   {
     "name": "WASP-12 b",
-    "typ": "Gas Giant",
+    "typ": "GasGiant",
     "title": " A giant planet composed mainly of gas",
     "img": "https://exoplanets.nasa.gov/assets/content/planets/terrestrial.jpg",
     "imgType": " Artist concept",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Kepler-452 b",
-    "typ": "Super Earth",
+    "typ": "SuperEarth",
     "title": "A potentially rocky world, larger than Earth",
     "img": "https://exoplanets.nasa.gov/system/planets/planet_images/5471_212_Kepler452b.jpg",
     "imgType": " Artist concept",

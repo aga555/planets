@@ -6,7 +6,7 @@
   <h1> Planets </h1>
 <!--filter button-->
 
-
+<app-planets-filter-type></app-planets-filter-type>
 <app-planets-search (applied)="searchingApplied($event)"></app-planets-search>
 <!--list of planets -->
 <div *ngIf="(planets$|async) as planets; else loading">
