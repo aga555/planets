@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {DataService} from '../data.service';
 
 @Component({
   selector: 'app-planets',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanetsComponent implements OnInit {
 
-  constructor() { }
+  planets$ = this.dataService.getPlanets();
+
+  constructor(private dataService: DataService) {
+  }
 
   ngOnInit(): void {
   }
