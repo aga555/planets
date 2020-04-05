@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 
 
@@ -8,6 +8,8 @@ import {FormBuilder, FormGroup} from '@angular/forms';
   styleUrls: ['./planets-search.component.css']
 })
 export class PlanetsSearchComponent implements OnInit {
+
+  @Input() defaultSearch;
   @Output() applied = new EventEmitter();
   form: FormGroup;
 
@@ -15,8 +17,10 @@ export class PlanetsSearchComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.form = this.formBuilder.group({search: []});
-    this.form.get('search').valueChanges.subscribe(value => { this.applied.emit(value);});
+    this.form = this.formBuilder.group({search: [this.defaultSearch]});
+    this.form.get('search').valueChanges.subscribe(value => {
+      this.applied.emit(value);
+    });
   }
 
 }

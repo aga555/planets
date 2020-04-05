@@ -10,6 +10,8 @@ import {ActivatedRoute, Router} from '@angular/router';
 export class PlanetsComponent implements OnInit {
 
   planets$ = this.dataService.planets$;
+  currentSearch = '';
+  currentPlanetTypeFilters = [];
 
   constructor(private dataService: DataService,
               private router: Router,
@@ -20,7 +22,9 @@ export class PlanetsComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
       const searchString = params.search || '';
       const planetTypeFilters = params['planet-type'] || [];
-      this.dataService.loadPlanets( planetTypeFilters, searchString);
+      this.dataService.loadPlanets(planetTypeFilters, searchString);
+      this.currentPlanetTypeFilters = planetTypeFilters;
+      this.currentSearch = searchString;
     });
   }
 

@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 
 @Component({
@@ -8,7 +8,7 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 })
 export class PlanetsFilterTypeComponent implements OnInit {
 
-
+  @Input() defaultFilters = [];
   @Output() applied = new EventEmitter();
   form: FormGroup;
 
@@ -17,9 +17,9 @@ export class PlanetsFilterTypeComponent implements OnInit {
 
   ngOnInit() {
     this.form = this.formBuilder.group({
-      SuperEarth: [],
-      Terrestrial: [],
-      GasGiant: []
+      SuperEarth: [this.defaultFilters.includes('SuperEarth')],
+      Terrestrial: [this.defaultFilters.includes('Terrestrial')],
+      GasGiant: [this.defaultFilters.includes(' GasGiant:')]
     });
   }
 

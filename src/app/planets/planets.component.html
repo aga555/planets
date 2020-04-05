@@ -6,8 +6,8 @@
   <h1> Planets </h1>
   <!--filter button-->
 
-  <app-planets-filter-type (applied)="planetTypeFilterApplied($event)"></app-planets-filter-type>
-  <app-planets-search (applied)="searchingApplied($event)"></app-planets-search>
+  <app-planets-filter-type [defaultFilters]="currentPlanetTypeFilters" (applied)="planetTypeFilterApplied($event)"></app-planets-filter-type>
+  <app-planets-search   [defaultSearch]="currentSearch " (applied)="searchingApplied($event)"></app-planets-search>
   <!--list of planets -->
   <div *ngIf="(planets$|async) as planets ">
 
