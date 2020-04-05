@@ -2,10 +2,23 @@
 <p>
   {{planets$|async |json}}
 </p>-->
-<div>
+<div class="container">
   <h1> Planets </h1>
+  <mat-spinner></mat-spinner>
+  <div class="">
 
   <div *ngFor=" let planet of planets$ | async ">
-    {{planet.name}}
+    <div class="mat-card">
+      <div class="mat-card-header">
+        <img src="{{planet.img}}">
+      </div>
+      <div class="mat-card-title">
+        {{planet.name}}/{{planet.type}}
+      </div>
+      <div class="mat-card-subtitle">
+        {{planet.title}}
+      </div>
+    </div>
+  </div>
   </div>
 </div>
