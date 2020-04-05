@@ -1,6 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {DataService} from '../data.service';
 import {ActivatedRoute, Router} from '@angular/router';
+import {MatTableDataSource} from '@angular/material/table';
+import {MatPaginator} from '@angular/material/paginator';
 
 @Component({
   selector: 'app-planets',
@@ -12,6 +14,10 @@ export class PlanetsComponent implements OnInit {
   planets$ = this.dataService.planets$;
   currentSearch = '';
   currentPlanetTypeFilters = [];
+  matData = new MatTableDataSource<any>([]);
+  displayedColumns = ['title'];
+
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
   constructor(private dataService: DataService,
               private router: Router,
@@ -25,6 +31,10 @@ export class PlanetsComponent implements OnInit {
       this.dataService.loadPlanets(planetTypeFilters, searchString);
       this.currentPlanetTypeFilters = planetTypeFilters;
       this.currentSearch = searchString;
+    });
+    this.planets$.subscribe(planets => {
+      this.matData = new MatTableDataSource<any>(planets.data);
+      this.matData.paginator = this.paginator;
     });
   }
 
