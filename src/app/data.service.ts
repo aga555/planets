@@ -7,13 +7,13 @@ import {BehaviorSubject} from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  planets$ = new BehaviorSubject([]);
+  planets$ = new BehaviorSubject({loading: true, data:[]});
 
   constructor(private httpClient: HttpClient) {
   }
 
   loadPlanets(planetTypeFilters, searchString) {
-    this.planets$.next([]);
+    this.planets$.next({loading: true,  data:[]});
     return this.httpClient.get<any[]>('assets/planets.json')
       .pipe(
         delay(2000),
@@ -33,7 +33,7 @@ export class DataService {
         )
       )
       .subscribe(planets => {
-        this.planets$.next(planets);
+        this.planets$.next({loading: false, data: planets});
       })
       ;
   }

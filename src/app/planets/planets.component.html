@@ -6,17 +6,20 @@
   <h1> Planets </h1>
   <!--filter button-->
 
-  <app-planets-filter-type [defaultFilters]="currentPlanetTypeFilters" (applied)="planetTypeFilterApplied($event)"></app-planets-filter-type>
-  <app-planets-search   [defaultSearch]="currentSearch " (applied)="searchingApplied($event)"></app-planets-search>
+  <app-planets-filter-type [defaultFilters]="currentPlanetTypeFilters"
+                           (applied)="planetTypeFilterApplied($event)"></app-planets-filter-type>
+  <app-planets-search [defaultSearch]="currentSearch " (applied)="searchingApplied($event)"></app-planets-search>
   <!--list of planets -->
   <div *ngIf="(planets$|async) as planets ">
 
-    <ng-container *ngIf="planets.length == 0">
+    <ng-container *ngIf="planets.loading ">
       loading ...
       <mat-spinner></mat-spinner>
     </ng-container>
-
-    <div *ngFor=" let planet of planets ">
+    <ng-container *ngIf="!planets.loading && planets.data.length===0 ">
+   <div>    No planets found...</div>
+    </ng-container>
+    <div *ngFor=" let planet of planets.data ">
       <div class="mat-card">
         <div class="mat-card-header">
           <img src="{{planet.img}}">
