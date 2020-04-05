@@ -12,10 +12,17 @@ export class DataService {
   constructor(private httpClient: HttpClient) {
   }
 
-  loadPlanets(searchString) {
+  loadPlanets(planetTypeFilters, searchString) {
+    this.planets$.next([]);
     return this.httpClient.get<any[]>('assets/planets.json')
       .pipe(
         delay(2000),
+        map(planets => {
+          if (!planetTypeFilters.length) {
+            return planets;
+          }
+          return planets.filter(planet => planetTypeFilters.includes(planet.type));
+        }),
         map(
           planets => {
             if (!searchString) {

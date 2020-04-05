@@ -10,10 +10,12 @@
   <app-planets-search (applied)="searchingApplied($event)"></app-planets-search>
   <!--list of planets -->
   <div *ngIf="(planets$|async) as planets ">
-    <ng-container *ngIf="planets.length==0">
+
+    <ng-container *ngIf="planets.length == 0">
       loading ...
       <mat-spinner></mat-spinner>
     </ng-container>
+
     <div *ngFor=" let planet of planets ">
       <div class="mat-card">
         <div class="mat-card-header">

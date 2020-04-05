@@ -19,7 +19,8 @@ export class PlanetsComponent implements OnInit {
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       const searchString = params.search || '';
-      this.dataService.loadPlanets(searchString);
+      const planetTypeFilters = params['planet-type'] || [];
+      this.dataService.loadPlanets( planetTypeFilters, searchString);
     });
   }
 
@@ -28,7 +29,7 @@ export class PlanetsComponent implements OnInit {
   }
 
   planetTypeFilterApplied($event) {
-    this.router.navigate(['planets'], {queryParams: {'planet-type': $event} });
+    this.router.navigate(['planets'], {queryParams: {'planet-type': $event}});
   }
 
 }

@@ -15,13 +15,8 @@ export class PlanetsSearchComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.form = this.formBuilder.group({
-      search: []
-    });
-    this.form.get('search').valueChanges.subscribe(value =>
-    {
-console.log(value);
-    });
+    this.form = this.formBuilder.group({search: []});
+    this.form.get('search').valueChanges.subscribe(value => { this.applied.emit(value);});
   }
 
 }
