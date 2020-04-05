@@ -29,11 +29,15 @@ export class PlanetsComponent implements OnInit {
   }
 
   searchingApplied($event) {
-    this.router.navigate(['planets'], {queryParams: {search: $event}});
+    const params = this.route.snapshot.queryParams;
+    const search = {search: $event};
+    this.router.navigate(['planets'], {queryParams: {...params, ...search}});
   }
 
   planetTypeFilterApplied($event) {
-    this.router.navigate(['planets'], {queryParams: {'planet-type': $event}});
+    const params = this.route.snapshot.queryParams;
+    const planetType = {'planet-type': $event};
+    this.router.navigate(['planets'], {queryParams: {...params, ...planetType}});
   }
 
 }
