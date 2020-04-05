@@ -21,6 +21,7 @@ export class PlanetsFilterTypeComponent implements OnInit {
   }
 
   submit(formValue) {
-    console.log(formValue);
+    const planetType = Object.keys(formValue).filter(item => formValue[item]);
+    console.log(planetType);
   }
 }
