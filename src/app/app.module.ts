@@ -13,11 +13,16 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import { PlanetsSearchComponent } from './planets-search/planets-search.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlanetsComponent
+    PlanetsComponent,
+    PlanetsSearchComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,10 @@ import {MatButtonModule} from '@angular/material/button';
     MatTableModule,
     MatPaginatorModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

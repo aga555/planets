@@ -1,18 +1,33 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {delay} from 'rxjs/operators';
+import {delay, map} from 'rxjs/operators';
+import {BehaviorSubject} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+  planets$ = new BehaviorSubject([]);
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+  }
 
-  getPlanets(){
-    return this.httpClient.get('assets/planets.json')
+  loadPlanets(searchString) {
+    return this.httpClient.get<any[]>('assets/planets.json')
       .pipe(
-        delay(2000)
-      );
+        delay(2000),
+        map(
+          planets => {
+            if (!searchString) {
+              return planets;
+            }
+            return planets.filter(planet => planet.name.includes(searchString));
+          }
+        )
+      )
+      .subscribe(planets => {
+        this.planets$.next(planets);
+      })
+      ;
   }
 }

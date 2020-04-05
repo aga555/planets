@@ -4,8 +4,11 @@
 </p>-->
 <div class="container">
   <h1> Planets </h1>
+<!--filter button-->
 
 
+<app-planets-search (applied)="searchingApplied($event)"></app-planets-search>
+<!--list of planets -->
 <div *ngIf="(planets$|async) as planets; else loading">
   <div *ngFor=" let planet of planets ">
     <div class="mat-card">
