@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "planets"
+    }
+  },
+  "defaultProject": "planets",
+  "cli": {
+    "analytics": "59608f1c-5f6d-4101-8495-8f8a23f45332"
+  }
 }
