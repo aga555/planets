@@ -4,10 +4,10 @@
 </p>-->
 <div class="container">
   <h1> Planets </h1>
-  <mat-spinner></mat-spinner>
-  <div class="">
 
-  <div *ngFor=" let planet of planets$ | async ">
+
+<div *ngIf="(planets$|async) as planets; else loading">
+  <div *ngFor=" let planet of planets ">
     <div class="mat-card">
       <div class="mat-card-header">
         <img src="{{planet.img}}">
@@ -21,4 +21,9 @@
     </div>
   </div>
   </div>
+  <ng-template #loading>
+    loading ...
+    <mat-spinner></mat-spinner>
+  </ng-template>
 </div>
+
