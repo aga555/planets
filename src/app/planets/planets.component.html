@@ -4,29 +4,30 @@
 </p>-->
 <div class="container">
   <h1> Planets </h1>
-<!--filter button-->
+  <!--filter button-->
 
-<app-planets-filter-type></app-planets-filter-type>
-<app-planets-search (applied)="searchingApplied($event)"></app-planets-search>
-<!--list of planets -->
-<div *ngIf="(planets$|async) as planets; else loading">
-  <div *ngFor=" let planet of planets ">
-    <div class="mat-card">
-      <div class="mat-card-header">
-        <img src="{{planet.img}}">
-      </div>
-      <div class="mat-card-title">
-        {{planet.name}}/{{planet.type}}
-      </div>
-      <div class="mat-card-subtitle">
-        {{planet.title}}
+  <app-planets-filter-type (applied)="planetTypeFilterApplied($event)"></app-planets-filter-type>
+  <app-planets-search (applied)="searchingApplied($event)"></app-planets-search>
+  <!--list of planets -->
+  <div *ngIf="(planets$|async) as planets ">
+    <ng-container *ngIf="planets.length==0">
+      loading ...
+      <mat-spinner></mat-spinner>
+    </ng-container>
+    <div *ngFor=" let planet of planets ">
+      <div class="mat-card">
+        <div class="mat-card-header">
+          <img src="{{planet.img}}">
+        </div>
+        <div class="mat-card-title">
+          {{planet.name}}/{{planet.type}}
+        </div>
+        <div class="mat-card-subtitle">
+          {{planet.title}}
+        </div>
       </div>
     </div>
   </div>
-  </div>
-  <ng-template #loading>
-    loading ...
-    <mat-spinner></mat-spinner>
-  </ng-template>
+
 </div>
 

@@ -27,4 +27,8 @@ export class PlanetsComponent implements OnInit {
     this.router.navigate(['planets'], {queryParams: {search: $event}});
   }
 
+  planetTypeFilterApplied($event) {
+    this.router.navigate(['planets'], {queryParams: {'planet-type': $event} });
+  }
+
 }

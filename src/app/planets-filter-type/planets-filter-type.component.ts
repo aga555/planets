@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 
 @Component({
@@ -7,6 +7,9 @@ import {FormBuilder, FormGroup} from '@angular/forms';
   styleUrls: ['./planets-filter-type.component.css']
 })
 export class PlanetsFilterTypeComponent implements OnInit {
+
+
+  @Output() applied = new EventEmitter();
   form: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {
@@ -22,6 +25,6 @@ export class PlanetsFilterTypeComponent implements OnInit {
 
   submit(formValue) {
     const planetType = Object.keys(formValue).filter(item => formValue[item]);
-    console.log(planetType);
+    this.applied.emit(planetType);
   }
 }
