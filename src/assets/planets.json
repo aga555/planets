@@ -59,7 +59,6 @@
     "travelTime": 2,
     "travelSpeed": 671
   },
-
   {
     "id": 6,
     "name": "TRAPPIST-1 e",
@@ -70,6 +69,150 @@
     "discovered": 2017,
     "description": "TRAPPIST-1 e is a terrestrial exoplanet that orbits a M-type star. Its mass is 0.62 Earths, it takes 6.1 days to complete one orbit of its star, and is 0.02817 AU from its star. Its discovery was announced in 2017.",
     "travelTime": 41,
+    "travelSpeed": 671
+  },
+  {
+    "id": 7,
+    "name": "Kepler-186 f",
+    "type": "SuperEarth",
+    "title": "A potentially rocky world, larger than Earth",
+    "img": "https://exoplanets.nasa.gov/system/planets/planet_images/632_Kepler186f.jpg",
+    "imgType": " Artist concept",
+    "discovered": 2014,
+    "description": "Kepler-186 f is a super Earth exoplanet that orbits a K-type star. Its mass is 1.71 Earths, it takes 129.9 days to complete one orbit of its star, and is 0.432 AU from its star. Its discovery was announced in 2014.",
+    "travelTime": 561,
+    "travelSpeed": 671
+  },
+  {
+    "id": 7,
+    "name": "Kepler-16 b ",
+    "type": "GasGiant",
+    "title": "A giant planet composed mainly of gas",
+    "img": "https://exoplanets.nasa.gov/system/planets/planet_images/1814_Kepler-16b_thumbnail.jpg",
+    "imgType": " Artist concept",
+    "discovered": 2011,
+    "description": "Kepler-16b was the Kepler telescope’s first discovery of a planet in a “circumbinary” orbit– circling two stars, as opposed to one star in a double-star system. Like Luke Skywalker's home planet Tatooine, Kepler-16b would have two sunsets if you could stand on its surface. This planet, however, is likely cold, about the size of Saturn and gaseous, though partly composed of rock. It lies outside its two stars’ “habitable zone,” where liquid water could exist. And its stars are cooler than our sun, probably rendering the planet lifeless. Of course, we could look on the bright side (so to speak). When the discovery was announced in 2011, Bill Borucki, the now-retired NASA principal investigator for Kepler at Ames Research Center, Moffett Field, California, said finding the new planet might actually broaden the prospects for life in our galaxy. About half of all stars belong to binary systems, so the fact that planets form around these, as well as around single stars, can only increase the odds.",
+    "travelTime": 246,
+    "travelSpeed": 671
+  },
+  {
+    "id": 8,
+    "name": "EPIC 201497682 b",
+    "type": "Terrestrial",
+    "title": "A rocky world outside our solar system",
+    "img": "https://exoplanets.nasa.gov/assets/content/planets/terrestrial.jpg",
+    "imgType": " Artist concept",
+    "discovered": 2019,
+    "description": "EPIC 201497682 b is a terrestrial exoplanet that orbits a K-type star. Its mass is 0.26 Earths and it takes 2.1 days to complete one orbit of its star. Its discovery was announced in 2019",
+    "travelTime": 832,
+    "travelSpeed": 671
+  },
+  {
+    "id": 9,
+    "name": "EPIC 206215704 b",
+    "type": "Terrestrial",
+    "title": "A rocky world outside our solar system",
+    "img": "https://exoplanets.nasa.gov/assets/content/planets/terrestrial.jpg",
+    "imgType": " Artist concept",
+    "discovered": 2019,
+    "description": "EPIC 206215704 b is a terrestrial exoplanet that orbits a K-type star. Its mass is 0.666 Earths and it takes 2.3 days to complete one orbit of its star. Its discovery was announced in 2019.",
+    "travelTime": 360,
+    "travelSpeed": 671
+  },
+  {
+    "id": 10,
+    "name": "EPIC 206317286 b",
+    "type": "Terrestrial",
+    "title": "A rocky world outside our solar system",
+    "img": "https://exoplanets.nasa.gov/assets/content/planets/terrestrial.jpg",
+    "imgType": " Artist concept",
+    "discovered": 2019,
+    "description": "EPIC 206317286 b is a terrestrial exoplanet that orbits a G-type star. Its mass is 0.84 Earths and it takes 1.6 days to complete one orbit of its star. Its discovery was announced in 2019.",
+    "travelTime": 1,
+    "travelSpeed": 671
+  },
+  {
+    "id": 10,
+    "name": "K2-136 b",
+    "type": "Terrestrial",
+    "title": "A rocky world outside our solar system",
+    "img": "https://exoplanets.nasa.gov/assets/content/planets/terrestrial.jpg",
+    "imgType": " Artist concept",
+    "discovered": 2017,
+    "description": "K2-136 b is a terrestrial exoplanet that orbits a K-type star. Its mass is 0.937 Earths and it takes 8 days to complete one orbit of its star. Its discovery was announced in 2017.",
+    "travelTime": 1,
+    "travelSpeed": 671
+  },
+  {
+    "id": 11,
+    "name": "55 Cancri e",
+    "type": "SuperEarth",
+    "title": "A potentially rocky world, larger than Earth",
+    "img": "https://exoplanets.nasa.gov/assets/content/planets/superearth.jpg",
+    "imgType": " Artist concept",
+    "discovered": 2004,
+    "description": "55 Cancri e is a super Earth exoplanet that orbits a G-type star. Its mass is 8.08 Earths, it takes 0.7 days to complete one orbit of its star, and is 0.01544 AU from its star. Its discovery was announced in 2004.",
+    "travelTime": 1,
+    "travelSpeed": 671
+  },
+  {
+    "id": 11,
+    "name": "55 Cancri e",
+    "type": "SuperEarth",
+    "title": "A potentially rocky world, larger than Earth",
+    "img": "https://exoplanets.nasa.gov/assets/content/planets/superearth.jpg",
+    "imgType": " Artist concept",
+    "discovered": 2004,
+    "description": "55 Cancri e is a super Earth exoplanet that orbits a G-type star. Its mass is 8.08 Earths, it takes 0.7 days to complete one orbit of its star, and is 0.01544 AU from its star. Its discovery was announced in 2004.",
+    "travelTime": 41,
+    "travelSpeed": 671
+  },
+  {
+    "id": 12,
+    "name": "CoRoT-7 b",
+    "type": "SuperEarth",
+    "title": "A potentially rocky world, larger than Earth",
+    "img": "https://exoplanets.nasa.gov/system/planets/planet_images/1242_CoRoT-7b.jpg",
+    "imgType": " Artist concept",
+    "discovered": 2009,
+    "description": "CoRoT-7 b is a super Earth exoplanet that orbits a G-type star. Its mass is 3.1783 Earths, it takes 0.9 days to complete one orbit of its star, and is 0.017016 AU from its star. Its discovery was announced in 2009.",
+    "travelTime": 524,
+    "travelSpeed": 671
+  },
+  {
+    "id": 13,
+    "name": "DMPP-1 d",
+    "type": "SuperEarth",
+    "title": "A potentially rocky world, larger than Earth",
+    "img": "https://exoplanets.nasa.gov/assets/content/planets/superearth.jpg",
+    "imgType": " Artist concept",
+    "discovered": 2019,
+    "description": "DMPP-1 d is a super Earth exoplanet that orbits a F-type star. Its mass is 3.35 Earths, it takes 2.9 days to complete one orbit of its star, and is 0.0422 AU from its star. Its discovery was announced in 2019.",
+    "travelTime": 202,
+    "travelSpeed": 671
+  },
+  {
+    "id": 14,
+    "name": "DMPP-3 A b",
+    "type": "SuperEarth",
+    "title": "A potentially rocky world, larger than Earth",
+    "img": "https://exoplanets.nasa.gov/assets/content/planets/superearth.jpg",
+    "imgType": " Artist concept",
+    "discovered": 2019,
+    "description": "DMPP-3 A b is a super Earth exoplanet that orbits a G-type star. Its mass is 2.58 Earths, it takes 6.7 days to complete one orbit of its star, and is 0.0662 AU from its star. Its discovery was announced in 2019.",
+    "travelTime": 160,
+    "travelSpeed": 671
+  },
+  {
+    "id": 14,
+    "name": "11 Comae Berenices b",
+    "type": "GasGiant",
+    "title": "A giant planet composed mainly of gas",
+    "img": "https://exoplanets.nasa.gov/assets/content/planets/gasgiant.jpg",
+    "imgType": " Artist concept",
+    "discovered": 2007,
+    "description": "11 Comae Berenices b is a gas giant exoplanet that orbits a K-type star. Its mass is 19.4 Jupiters, it takes 326 days to complete one orbit of its star, and is 1.29 AU from its star. Its discovery was announced in 2007.\n\nORBITAL\nRADIUS1.29AU",
+    "travelTime": 305,
     "travelSpeed": 671
   }
 ]
