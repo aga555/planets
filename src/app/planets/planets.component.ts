@@ -50,4 +50,7 @@ export class PlanetsComponent implements OnInit {
     this.router.navigate(['planets'], {queryParams: {...params, ...planetType}});
   }
 
+  onSelect(planet: any) {
+    this.router.navigate(['/planets', planet.id]);
+  }
 }

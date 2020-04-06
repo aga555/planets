@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "KOI-55 b ",
     "type": "Terrestrial",
     "title": " A rocky world outside our solar system",
@@ -11,6 +12,7 @@
     "travelSpeed": 671
   },
   {
+    "id": 2,
     "name": "Kepler-7 b",
     "type": "GasGiant",
     "title": " A giant planet composed mainly of gas",
@@ -22,6 +24,7 @@
     "travelSpeed": 671
   },
   {
+    "id": 3,
     "name": "Kepler-22 b",
     "type": "SuperEarth",
     "title": " A potentially rocky world, larger than Earth",
@@ -33,6 +36,7 @@
     "travelSpeed": 671
   },
   {
+    "id": 4,
     "name": "WASP-12 b",
     "type": "GasGiant",
     "title": " A giant planet composed mainly of gas",
@@ -44,6 +48,7 @@
     "travelSpeed": 671
   },
   {
+    "id": 5,
     "name": "Kepler-452 b",
     "type": "SuperEarth",
     "title": "A potentially rocky world, larger than Earth",
@@ -56,6 +61,7 @@
   },
 
   {
+    "id": 6,
     "name": "TRAPPIST-1 e",
     "type": "Terrestrial",
     "title": "A rocky world outside our solar system",

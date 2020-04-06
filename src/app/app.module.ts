@@ -20,6 +20,7 @@ import {MatInputModule} from '@angular/material/input';
 import { PlanetsFilterTypeComponent } from './planets-filter-type/planets-filter-type.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { PlanetDetailComponent } from './planet-detail/planet-detail.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     AppComponent,
     PlanetsComponent,
     PlanetsSearchComponent,
-    PlanetsFilterTypeComponent
+    PlanetsFilterTypeComponent,
+    PlanetDetailComponent
   ],
   imports: [
     BrowserModule,
