@@ -21,6 +21,7 @@ import { PlanetsFilterTypeComponent } from './planets-filter-type/planets-filter
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { PlanetDetailComponent } from './planet-detail/planet-detail.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { PlanetDetailComponent } from './planet-detail/planet-detail.component';
     MatSelectModule,
     MatButtonToggleModule,
     FormsModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

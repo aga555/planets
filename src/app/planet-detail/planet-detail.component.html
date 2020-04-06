@@ -2,8 +2,8 @@
 
 
     <div   *ngIf="planet$ | async as planet">
-      <button class="uk-button uk-button-default uk-button-small" (click)="goToAllPlanets(planet)">Back</button>
-      <h1 class="uk-heading-line uk-text-center"><span>{{ planet.title }}</span></h1>
+      <button class="btn" (click)="goToAllPlanets(planet)">Back</button>
+      <h1><span>{{ planet.title }}</span></h1>
 
 
       <div class="uk-card-media-top" >

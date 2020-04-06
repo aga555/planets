@@ -14,7 +14,7 @@
 
     <ng-container *ngIf="planets.loading ">
       loading ...
-      <mat-spinner></mat-spinner>
+      <mat-spinner color="accent"></mat-spinner>
     </ng-container>
     <ng-container *ngIf="!planets.loading && planets.data.length===0 ">
       <div> No planets found...</div>

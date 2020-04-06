@@ -1,17 +1,11 @@
-<form [formGroup]="form" (submit)="submit(form.value)">
+<form class="filter" [formGroup]="form" (submit)="submit(form.value)">
   <div>
-    <label>
-      <input class="checkbox" type="checkbox" [formControlName]="'GasGiant'">Gas Giant
-    </label>
-    <label>
-      <input class="checkbox" type="checkbox" [formControlName]="'Terrestrial'">Terrestrial
-    </label>
-    <label>
-      <input class="checkbox" type="checkbox" [formControlName]="'SuperEarth'">Super Earth
-    </label>
-
+    <mat-checkbox class="filter" [formControlName]="'GasGiant'">Gas Giant</mat-checkbox>
+    <mat-checkbox class="filter" [formControlName]="'Terrestrial'">Terrestrial</mat-checkbox>
+    <mat-checkbox class="filter" [formControlName]="'SuperEarth'">Super Earth</mat-checkbox>
+    <button class=" btn filter" mat-flat-button color="accent"> aply</button>
   </div>
-  <button> aply</button>
+
 </form>
 
 

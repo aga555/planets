@@ -1,1 +1,9 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+body{
+  font-family: 'Heebo', sans-serif;
+}
+.btn {
+  width: 250px;
+  border-radius: 15px;
+
+}
