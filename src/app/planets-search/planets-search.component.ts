@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
+import {debounceTime} from 'rxjs/operators';
 
 
 @Component({
@@ -18,7 +19,9 @@ export class PlanetsSearchComponent implements OnInit {
 
   ngOnInit() {
     this.form = this.formBuilder.group({search: [this.defaultSearch]});
-    this.form.get('search').valueChanges.subscribe(value => {
+    this.form.get('search').valueChanges
+      .pipe(debounceTime(500))
+      .subscribe(value => {
       this.applied.emit(value);
     });
   }
