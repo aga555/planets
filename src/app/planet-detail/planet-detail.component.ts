@@ -28,7 +28,6 @@ export class PlanetDetailComponent implements OnInit {
   }
 
   goToAllPlanets(planet: Planet) {
-    const planetId = planet ? planet.id : null;
     this.router.navigate(['/planets']);
   }
 }

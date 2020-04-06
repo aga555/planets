@@ -1,9 +1,35 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 body{
   font-family: 'Heebo', sans-serif;
+  height: 100%;
+  position: relative;
+  align-items: center;
 }
 .btn {
   width: 250px;
-  border-radius: 15px;
-
+  border-radius: 25px;
+  margin: 20px;
+  padding: 10px;
 }
+h1,h2 {
+  text-align: center;
+}
+h1{
+  height:60px ;
+}
+.key, .value {
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.key {
+  line-height: 1.4;
+  text-shadow: none;
+}
+
+.value {
+  line-height: 1.4;
+  text-shadow: none;
+  color: orange;
+}
+
