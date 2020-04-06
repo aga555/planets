@@ -29,7 +29,7 @@ export class DataService {
             if (!searchString) {
               return planets;
             }
-            return planets.filter(planet => planet.name.includes(searchString));
+            return planets.filter(planet => planet.name.toLowerCase().includes(searchString.toLowerCase()));
           }
         )
       )
