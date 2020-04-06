@@ -1,0 +1,29 @@
+
+
+
+    <div   *ngIf="planet$ | async as planet">
+      <button class="uk-button uk-button-default uk-button-small" (click)="goToAllPlanets(planet)">Back</button>
+      <h1 class="uk-heading-line uk-text-center"><span>{{ planet.title }}</span></h1>
+
+
+      <div class="uk-card-media-top" >
+        <img src="{{planet.img}}" alt="">
+      </div>
+      <div class="uk-card-body">
+        <div class="uk-text-muted uk-text-uppercase uk-text-small uk text-bold uk-text-truncate">
+          {{planet.type}}/{{planet.title}}
+        </div>
+        <div class="uk-text-bold">
+          {{planet.description}}
+        </div>
+
+
+
+      <div class="uk-text-muted uk-text-uppercase uk-text-left@s ">
+        <label>Id: </label>{{ planet.id }}
+      </div>
+
+
+
+    </div>
+    </div>
