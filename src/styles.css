@@ -1,35 +1,79 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-body{
+
+body {
   font-family: 'Heebo', sans-serif;
   height: 100%;
   position: relative;
   align-items: center;
 }
+
 .btn {
   width: 250px;
   border-radius: 25px;
   margin: 20px;
   padding: 10px;
 }
-h1,h2 {
+
+h1, h2, h3, h4 {
   text-align: center;
 }
-h1{
-  height:60px ;
+
+h1 {
+  height: 60px;
 }
-.key, .value {
-  margin: 10px;
+
+::selection {
+  background: pink;
+}
+
+::-moz-selection {
+  background: salmon;
+}
+
+body {
+  margin: 0;
+  font-size: 20px;
+  overflow-x: hidden;
+  color:black;
+}
+
+h1, h2, h3 {
+  line-height: 1;
+  margin: 0;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
-.key {
-  line-height: 1.4;
-  text-shadow: none;
+h2 {
+  font-size: 40px;
 }
 
-.value {
-  line-height: 1.4;
-  text-shadow: none;
-  color: orange;
+h1 {
+  font-size: 150px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  position: relative;
 }
 
+.centered {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+p{
+  line-height: 1.6
+}

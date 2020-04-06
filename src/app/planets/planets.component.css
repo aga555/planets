@@ -1,7 +1,4 @@
-/*img{
-  max-width: 50px;
-  border-radius: 50px;
-}*/
+
 table {
   width: 100%
 }
@@ -9,13 +6,14 @@ td{
   padding: 100px;
 }
 td :hover {
-  background: pink;
+  background:gainsboro;
 }
 
 .basic {
   width: 50px;
   float: left;
-  margin-right: 1.69492%;
+  margin-right:2%;
 
 }
+
 
