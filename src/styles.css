@@ -19,7 +19,9 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  height: 60px;
+  font-family: 'Karla', sans-serif;
+  font-size: 60px;
+  letter-spacing: 50px;
 }
 
 ::selection {

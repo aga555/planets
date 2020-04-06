@@ -1,12 +1,12 @@
 
 <div class="container">
-  <h1> Searching Planets </h1>
+  <h1> Searching Planets Application </h1>
 
-  <app-planets-search [defaultSearch]="currentSearch " (applied)="searchingApplied($event)"></app-planets-search>
+
 
   <app-planets-filter-type [defaultFilters]="currentPlanetTypeFilters"
                            (applied)="planetTypeFilterApplied($event)"></app-planets-filter-type>
-
+  <app-planets-search [defaultSearch]="currentSearch " (applied)="searchingApplied($event)"></app-planets-search>
   <div *ngIf="(planets$|async) as planets ">
 
     <ng-container *ngIf="planets.loading ">
@@ -39,6 +39,6 @@
     </table>
 
 
-  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  <mat-paginator [pageSizeOptions]="[5, 10, 25,100]" showFirstLastButtons color="accent"></mat-paginator>
 </div>
 
