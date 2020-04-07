@@ -7,38 +7,9 @@ body {
   align-items: center;
 }
 
-.btn {
-  width: 250px;
-  border-radius: 25px;
-  margin: 20px;
-  padding: 10px;
-}
-
 h1, h2, h3, h4 {
   text-align: center;
 }
-
-h1 {
-  font-family: 'Karla', sans-serif;
-  font-size: 60px;
-  letter-spacing: 50px;
-}
-
-::selection {
-  background: pink;
-}
-
-::-moz-selection {
-  background: salmon;
-}
-
-body {
-  margin: 0;
-  font-size: 20px;
-  overflow-x: hidden;
-  color:black;
-}
-
 h1, h2, h3 {
   line-height: 1;
   margin: 0;
@@ -50,16 +21,30 @@ h2 {
   font-size: 40px;
 }
 
-h1 {
-  font-size: 150px;
-  letter-spacing: 1px;
-  font-weight: 900;
-  position: relative;
+body {
+  margin: 0;
+  font-size: 20px;
+  overflow-x: hidden;
+  color:black;
+}
+p{
+  line-height: 1.6
 }
 
-.centered {
-  margin: 0 auto;
-  max-width: 600px;
+
+.btn {
+  width: 150px;
+  border-radius: 25px;
+  margin: 20px;
+  padding: 10px;
+}
+
+::selection {
+  background: salmon;
+}
+
+::-moz-selection {
+  background: salmon;
 }
 
 .container {
@@ -75,7 +60,4 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-p{
-  line-height: 1.6
 }

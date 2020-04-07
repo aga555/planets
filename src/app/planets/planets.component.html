@@ -1,17 +1,13 @@
 
 <div class="container">
-  <h4> Searching Planets Application </h4>
-
-
-
+  <div class="searching-header">   <h1> Searching Planets Application </h1></div>
   <app-planets-filter-type [defaultFilters]="currentPlanetTypeFilters"
                            (applied)="planetTypeFilterApplied($event)"></app-planets-filter-type>
   <app-planets-search [defaultSearch]="currentSearch " (applied)="searchingApplied($event)"></app-planets-search>
-  <div *ngIf="(planets$|async) as planets ">
+  <div class="waiting-width" *ngIf="(planets$|async) as planets ">
 
-    <ng-container *ngIf="planets.loading ">
-      loading ...
-      <mat-spinner color="accent"></mat-spinner>
+    <ng-container  *ngIf="planets.loading ">
+      <mat-spinner class="waiting-center"  color="accent"> </mat-spinner>
     </ng-container>
     <ng-container *ngIf="!planets.loading && planets.data.length===0 ">
       <div> No planets found...</div>

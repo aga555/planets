@@ -15,11 +15,22 @@ td :hover {
   margin-right:2%;
 
 }
-
 h1{
   letter-spacing: 10px;
   font-size: 40px;
-  background: black;
   color: lightgray;
   padding: 50px;
+}
+
+.searching-header{
+  background-color: black;
+}
+.waiting-width{
+  width: 100%;
+  display: flex;
+}
+.waiting-center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
