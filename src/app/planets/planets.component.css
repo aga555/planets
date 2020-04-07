@@ -1,4 +1,9 @@
-
+h1{
+  letter-spacing: 10px;
+  font-size: 40px;
+  color: lightgray;
+  padding: 50px;
+}
 table {
   width: 100%
 }
@@ -8,20 +13,12 @@ td{
 td :hover {
   background:gainsboro;
 }
-
 .basic {
   width: 50px;
   float: left;
   margin-right:2%;
 
 }
-h1{
-  letter-spacing: 10px;
-  font-size: 40px;
-  color: lightgray;
-  padding: 50px;
-}
-
 .searching-header{
   background-color: black;
 }
