@@ -23,6 +23,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { PlanetDetailComponent } from './planet-detail/planet-detail.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { BlackHoleComponent } from './black-hole/black-hole.component';
+import { UnCamelizePipe } from './unCamelize.pipe';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { BlackHoleComponent } from './black-hole/black-hole.component';
     PlanetsSearchComponent,
     PlanetsFilterTypeComponent,
     PlanetDetailComponent,
-    BlackHoleComponent
+    BlackHoleComponent,
+    UnCamelizePipe
   ],
   imports: [
     BrowserModule,

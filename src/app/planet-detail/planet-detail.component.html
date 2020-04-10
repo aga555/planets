@@ -1,11 +1,11 @@
 <div class="detail" *ngIf="planet$ | async as planet">
-  <button class=" btn filter" mat-flat-button color="accent" (click)="goToAllPlanets(planet)">
+  <button class=" btn filter fixed" mat-flat-button color="accent" (click)="goToAllPlanets(planet)">
     Back
   </button>
-  <div style="margin: 20px">
+  <div class="heading-name">
   <h3>   <strong>{{planet.name}}</strong></h3>
   </div>
-  <div style="margin: 50px">
+  <div class="heading-title" >
     <h4>{{ planet.title }}</h4>
   </div>
 
@@ -24,7 +24,7 @@
 
 
   <div class="explore">
-    {{planet.type}}/{{planet.title}}
+   <h4> {{planet.type|unCamelize}}/{{planet.title}}</h4>
     <p>
       {{planet.description}}
     </p>
