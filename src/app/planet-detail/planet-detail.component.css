@@ -25,6 +25,7 @@ margin: 20px;
 }
 figure{
   background: black;
+  max-width: 100%;
 }
 :host {
   background-color: black;
@@ -69,3 +70,32 @@ figure{
   font-weight: bold;
 }
 
+@media (max-width: 1275px) {
+  img {
+    max-width: 100%;
+  }
+}
+  @media (max-width: 982px) {
+ .distance-mode{
+   top:250px;
+   font-size: 12px;
+ }
+}
+@media (max-width: 549px) {
+  h3{
+    font-size: 40px;
+  }
+}
+@media (max-width: 392px) {
+  h3{
+    font-size: 30px;
+  }
+  h4{
+    font-size: 20px;}
+  .detail{
+     font-size: 14px;
+  }
+  .distance-mode{
+    font-size: 10px;
+  }
+}
