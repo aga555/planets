@@ -1,3 +1,4 @@
+Application for searching and using planets. The user can filter the planets by type and / or name. Clicking on a redirection list item using routing to the details of the selected planet. it is possible to return to the browser window. entering the wrong url - redirects to a page that allows you to safely return to the search engine. Reducing the number of queries to the server thanks to debounceTime with RXjs.  Written in Angular 8 using the libraries: Angular - Material RXjs. inspiration: https://exoplanets.nasa.gov/
 # Planets
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
